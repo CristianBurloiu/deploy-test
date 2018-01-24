@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="UTF-8">
+      <title>Form</title>
+      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+   
+      <!--
+         Form with HTML5 tags and basic CSS
+      -->
+      <style type="text/css">
+
+      body{
+         font-family: 'Roboto', sans-serif;
+         background-color: #ffa700;
+      }
+         #container{
+            width: 550px;
+            margin: auto;
+
+         }
+         input {
+            margin: 10px;
+         }
+
+         legend{
+            font-size: 30px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #999;
+            padding: 4px 15px;
+         }
+            
+         label.field{
+            display: block;
+            text-align: right;
+            width: 100px;
+            float: left;
+            clear: both;
+            margin: 10px;
+
+         }
+         input{
+            width: 200px;
+            border-radius: 5px;
+            padding: 6px 8px;
+         }
+         .field{
+            padding: 6px 8px;
+         }
+
+         #currency{
+             width: 220px;
+             border-radius: 5px;
+             padding: 6px 8px;
+         }
+
+         fieldset{
+            width: 450px;
+            border: 1px solid #999;
+            border-radius: 20px;
+            clear: both;
+            padding: 15px;
+            margin-bottom: 100px;
+            background-color:rgba(129, 187, 201,.2);
+
+         }
+      </style>
+   </head>
+   <body>
+      <div id="container">
+<form>
+   <fieldset>
+      <legend>Registration</legend>
+         <label for="firstname" class="field"> First name:</label>   
+         <input id="firstname" placeholder=" 9 characters,no numbers"
+            autocomplete="on" required="" autofocus type="text" name="firstname">
+         
+         <label for="Email" class="field"> Email:</label>   
+         <input id="Email" type="email" name="email" required="" autofocus placeholder="enter e-mail">
+
+         <label for="Website" class="field"> Website:</label>   
+         <input id="Website" type="URL" name="Website" placeholder="enter website">
+         
+         <label for="Password" class="field"> Password</label>   
+         <input id="Password" type="password" name="password" placeholder="enter password">
+         
+         
+         <label for="Telephone" class="field"> Telephone</label>   
+         <input id="Telephone" type="Telephone" name="Telephone" placeholder="enter telephone">
+         
+         <label for="Passport" class="field"> Passport </label>   
+         <input id="Passport" type="Telephone" name="Telephone" placeholder="enter passport number"
+         pattern="[0-9]{7}[A-Z]{1}">
+         
+         <label for="Eircode" class="field"> Eircode </label>   
+         <input id="Eircode" type="Telephone" name="Eircode" placeholder="enter Eircode" pattern="[A-Z]{1}[0-9]{2} [A-Z0-9]{4}"/>
+         
+         <label for="CreditCard" class="field"> Credit Card </label>   
+         <input id="CreditCard" type="Credit Card" name="Credit Card" placeholder="Enter Credit Card Number" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}[0-9]{4}">
+         
+         <label for="Submit" class="field"> </label>   
+         <input id="Submit" type="Submit" value="submit">
+      
+   </fieldset>
+   <fieldset>
+      <legend> Checkbox</legend>
+       <form>
+           <label for="checkbox" class="checkbox">  </label>  
+           <input type="checkbox" name="starter" value="Starter" checked> Starter<br>
+           <label for="checkbox" class="checkbox">  </label> 
+           <input type="checkbox" name="main" value="Main"> Main<br>
+           <label for="checkbox" class="checkbox">  </label> 
+           <input type="checkbox" name="dessert" value="Dessert"> Dessert
+      </form>
+      <fieldset>
+         <legend>Gender</legend>
+         <form action="">
+              <input type="radio" name="gender" value="male"> Male<br>
+              <input type="radio" name="gender" value="female"> Female<br>
+              <input type="radio" name="gender" value="other"> Other
+         </form>
+      <fieldset>
+         <legend>Signs of Zodiac</legend>
+         <select>
+           <option value="sun">Sun</option>
+           <option value="earth">Eath</option>
+           <option value="fire">Fire</option>
+           <option value=water"">Water</option>
+         </select>
+      </fieldset>
+      </fieldset>
+      <fieldset>
+         <legend>MusicGenres</legend>
+         <input list="MusicGenres">
+               <datalist id="MusicGenres">
+              <option value="Rock">
+              <option value="House">
+              <option value="Dance ">
+              <option value="R&B">
+              <option value="Folk ">
+              <option value="Hip Hop">
+              <option value="Classic">
+              <option value="Instrumental">
+              <option value="Trance">
+              <option value="Latino">
+              <option value="Reggae">
+            </datalist>
+      </fieldset>
+   </fieldset>
+</form>
+    </div>
+   </body>
+
+</html>
